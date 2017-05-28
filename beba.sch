@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8063,80 +8063,6 @@ General purpose 1N400x type rectifier
 </deviceset>
 </devicesets>
 </library>
-<library name="inductor-neosid">
-<description>&lt;b&gt;Neosid Chokes and Transformers&lt;/b&gt;&lt;p&gt;
-
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Electronic Component Book, Part 2 : Chokes, Fixed Value Inductors
-&lt;li&gt;Part 3 : Filters, Coil Assemblies, Thermoplastic Parts
-&lt;li&gt;Part 4 : SMD Filters, Coils, Fixed Value Inductors
-&lt;li&gt;www.neosid.de
-&lt;/ul&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SM-1206">
-<description>SMD CHIP &lt;B&gt;INDUCTOR&lt;/B&gt;&lt;p&gt;
-body 1206</description>
-<wire x1="1.3" y1="0.7" x2="1.3" y2="0.6" width="0.2032" layer="51"/>
-<wire x1="1.3" y1="0.6" x2="1.3" y2="-0.6" width="0.2032" layer="51"/>
-<wire x1="1.3" y1="-0.6" x2="1.3" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="1.3" y1="-0.7" x2="2.1" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="2.1" y1="-0.7" x2="2.1" y2="0.7" width="0.2032" layer="51"/>
-<wire x1="2.1" y1="0.7" x2="1.3" y2="0.7" width="0.2032" layer="51"/>
-<wire x1="-2.1" y1="0.7" x2="-2.1" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="-2.1" y1="-0.7" x2="-1.3" y2="-0.7" width="0.2032" layer="51"/>
-<wire x1="-1.3" y1="-0.7" x2="-1.3" y2="-0.6" width="0.2032" layer="51"/>
-<wire x1="-1.3" y1="-0.6" x2="-1.3" y2="0.6" width="0.2032" layer="51"/>
-<wire x1="-1.3" y1="0.6" x2="-1.3" y2="0.7" width="0.2032" layer="51"/>
-<wire x1="-1.3" y1="0.7" x2="-2.1" y2="0.7" width="0.2032" layer="51"/>
-<wire x1="-1.3" y1="-0.6" x2="-0.9" y2="-0.6" width="0.2032" layer="51"/>
-<wire x1="-0.9" y1="-0.6" x2="0.9" y2="-0.6" width="0.2032" layer="21"/>
-<wire x1="0.9" y1="-0.6" x2="1.3" y2="-0.6" width="0.2032" layer="51"/>
-<wire x1="1.3" y1="0.6" x2="0.9" y2="0.6" width="0.2032" layer="51"/>
-<wire x1="0.9" y1="0.6" x2="-0.9" y2="0.6" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="0.6" x2="-1.3" y2="0.6" width="0.2032" layer="51"/>
-<smd name="1" x="-1.65" y="0" dx="1.2" dy="1.8" layer="1"/>
-<smd name="2" x="1.65" y="0" dx="1.2" dy="1.8" layer="1"/>
-<text x="-2.143" y="0.997" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.208" y="-2.308" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="L">
-<text x="-3.81" y="1.778" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.556" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SM-1206" prefix="L" uservalue="yes">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-SMD chip inductor</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SM-1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="1734366-1 USB-A socket, vertical">
 <packages>
 <package name="TH">
@@ -15687,6 +15613,47 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="DE1205-18 Power Inductor">
+<packages>
+<package name="SMT">
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="6" y2="-6" width="0.127" layer="21"/>
+<wire x1="6" y1="-6" x2="-6" y2="-6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-6" x2="-6" y2="6" width="0.127" layer="21"/>
+<text x="-6" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6" y="-8" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="L1" x="-4.9" y="0" dx="5.4" dy="2.8" layer="1" rot="R90"/>
+<smd name="L2" x="4.9" y="0" dx="5.4" dy="2.8" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L">
+<pin name="L1" x="-10.16" y="1.27" length="middle"/>
+<pin name="L2" x="7.62" y="1.27" length="middle" rot="R180"/>
+<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-5.08" y1="0" x2="2.54" y2="2.54" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DE1205-18">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMT">
+<connects>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="L2" pad="L2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15740,9 +15707,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="CONN3" library="jst-ph" deviceset="JST-PH2" device="" value="5VDC"/>
 <part name="C8" library="resistor" deviceset="C-EU" device="C0805" value="10μF"/>
 <part name="S1" library="smd-special" deviceset="SWS001" device="" value="POWER"/>
-<part name="L4" library="inductor-neosid" deviceset="SM-1206" device="" value="DE1205-18"/>
 <part name="CONN4" library="1734366-1 USB-A socket, vertical" deviceset="USB-A" device="" value="USB-A female socket, right angle"/>
 <part name="C9" library="rcl" deviceset="CPOL-EU" device="E2,5-6E" value="4700μF / 10V"/>
+<part name="L" library="DE1205-18 Power Inductor" deviceset="DE1205-18" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15785,9 +15752,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="CONN3" gate="G$1" x="288.29" y="148.59"/>
 <instance part="C8" gate="G$1" x="299.72" y="151.13" rot="R180"/>
 <instance part="S1" gate="G$1" x="130.81" y="21.59" rot="R90"/>
-<instance part="L4" gate="G$1" x="71.12" y="115.57"/>
 <instance part="CONN4" gate="G$1" x="50.8" y="165.1"/>
 <instance part="C9" gate="G$1" x="319.532" y="151.13" rot="R180"/>
+<instance part="L" gate="G$1" x="73.66" y="114.3"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -16024,8 +15991,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="97.79" y1="115.57" x2="104.14" y2="115.57" width="0.1524" layer="91"/>
 <junction x="97.79" y="115.57"/>
-<pinref part="L4" gate="G$1" pin="2"/>
-<wire x1="87.63" y1="115.57" x2="76.2" y2="115.57" width="0.1524" layer="91"/>
+<pinref part="L" gate="G$1" pin="L2"/>
+<wire x1="81.28" y1="115.57" x2="87.63" y2="115.57" width="0.1524" layer="91"/>
 <junction x="87.63" y="115.57"/>
 </segment>
 <segment>
@@ -16227,12 +16194,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="95.25" y1="21.59" x2="90.17" y2="21.59" width="0.1524" layer="91"/>
 <label x="90.17" y="21.59" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="59.69" y1="115.57" x2="66.04" y2="115.57" width="0.1524" layer="91"/>
-<label x="62.23" y="115.57" size="1.778" layer="95"/>
-<pinref part="L4" gate="G$1" pin="1"/>
-</segment>
 </net>
 <net name="IT" class="2">
 <segment>
@@ -16287,6 +16248,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="IC1" gate="G$1" pin="SHDN"/>
 <wire x1="120.65" y1="21.59" x2="123.19" y2="21.59" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D2" gate="1" pin="A"/>
+<pinref part="L" gate="G$1" pin="L1"/>
+<wire x1="59.69" y1="115.57" x2="63.5" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
