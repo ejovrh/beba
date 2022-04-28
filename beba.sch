@@ -11293,7 +11293,6 @@ www.irf.com&lt;p&gt;
 <text x="-6.6" y="-5.6" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
 <wire x1="-6.5" y1="5.85" x2="6.5" y2="5.85" width="0.2" layer="21"/>
 <wire x1="6.5" y1="5.85" x2="6.5" y2="-5.15" width="0.2" layer="21"/>
-<wire x1="6.5" y1="-5.15" x2="-6.5" y2="-5.15" width="0.2" layer="21"/>
 <wire x1="-6.5" y1="-5.15" x2="-6.5" y2="5.85" width="0.2" layer="21"/>
 <wire x1="-6.75" y1="6.1" x2="6.75" y2="6.1" width="0.05" layer="39"/>
 <wire x1="6.75" y1="6.1" x2="6.75" y2="-5.4" width="0.05" layer="39"/>
@@ -11310,11 +11309,11 @@ www.irf.com&lt;p&gt;
 <smd name="G4" x="4.45" y="-2.58" dx="2" dy="2.5" layer="1"/>
 <hole x="-2.2" y="0" drill="0.9"/>
 <hole x="2.2" y="0" drill="0.9"/>
-<text x="1.6" y="-5.6" size="0.5" layer="21" font="vector" rot="SR270" align="center-left">5V0</text>
-<text x="0" y="-5.6" size="0.5" layer="21" font="vector" rot="SR270" align="center-left">DP</text>
-<text x="0.8" y="-5.6" size="0.5" layer="21" font="vector" rot="SR270" align="center-left">DN</text>
-<text x="-0.8" y="-5.6" size="0.5" layer="21" font="vector" rot="SR270" align="center-left">ID</text>
-<text x="-1.6" y="-5.6" size="0.5" layer="21" font="vector" rot="SR270" align="center-left">GND</text>
+<text x="1.6" y="-3.85" size="0.5" layer="21" font="vector" rot="R270" align="center-left">5V0</text>
+<text x="0" y="-3.85" size="0.5" layer="21" font="vector" rot="R270" align="center-left">DP</text>
+<text x="0.8" y="-3.85" size="0.5" layer="21" font="vector" rot="R270" align="center-left">DN</text>
+<text x="-0.8" y="-3.85" size="0.5" layer="21" font="vector" rot="R270" align="center-left">ID</text>
+<text x="-1.6" y="-3.85" size="0.5" layer="21" font="vector" rot="R270" align="center-left">GND</text>
 </package>
 </packages>
 <symbols>
@@ -11389,10 +11388,10 @@ www.irf.com&lt;p&gt;
 <smd name="3_DP" x="1" y="3.85" dx="0.9" dy="2.8" layer="1" roundness="4"/>
 <smd name="G1" x="-7.25" y="1.6" dx="2.5" dy="5" layer="1"/>
 <smd name="G2" x="7.25" y="1.6" dx="2.5" dy="5" layer="1"/>
-<text x="-3.5" y="6" size="0.5" layer="21" font="vector" rot="R270" align="center-right">5V0</text>
-<text x="-1" y="6" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DN</text>
-<text x="1" y="6" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DP</text>
-<text x="3.5" y="6" size="0.5" layer="21" font="vector" rot="R270" align="center-right">GND</text>
+<text x="-4.5" y="4" size="0.5" layer="21" font="vector" rot="R270" align="center-right">5V0</text>
+<text x="-2" y="4.5" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DN</text>
+<text x="2" y="4.5" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DP</text>
+<text x="4.5" y="4" size="0.5" layer="21" font="vector" rot="R270" align="center-right">GND</text>
 </package>
 </packages>
 <symbols>
@@ -12701,17 +12700,17 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </variantdefs>
 <classes>
 <class number="0" name="GND" width="0.25" drill="0.35">
-<clearance class="0" value="0.25"/>
+<clearance class="0" value="0.2"/>
 </class>
 <class number="1" name="V_input" width="0.25" drill="0.35">
-<clearance class="1" value="0.25"/>
+<clearance class="1" value="0.2"/>
 </class>
 <class number="2" name="other" width="0.25" drill="0.35">
-<clearance class="2" value="0.25"/>
+<clearance class="2" value="0.2"/>
 </class>
 </classes>
 <modules>
-<module name="IDEAL_DIODE" prefix="" dx="30.48" dy="20.32">
+<module name="1_IDEAL_DIODE" prefix="1" dx="30.48" dy="20.32">
 <ports>
 <port name="ANODE" side="left" coord="0" direction="pwr"/>
 <port name="CATHODE" side="right" coord="0" direction="pwr"/>
@@ -12802,7 +12801,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </sheet>
 </sheets>
 </module>
-<module name="TPS630701" prefix="" dx="30.48" dy="20.32">
+<module name="2_TPS630701" prefix="2" dx="30.48" dy="20.32">
 <ports>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
 <port name="V_IN" side="left" coord="0" direction="pwr"/>
@@ -13095,7 +13094,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </sheet>
 </sheets>
 </module>
-<module name="MCP73871" prefix="" dx="30.48" dy="25.4">
+<module name="3_MCP73871" prefix="3" dx="30.48" dy="25.4">
 <ports>
 <port name="GND" side="bottom" coord="0" direction="pwr"/>
 <port name="V_IN" side="left" coord="5.08" direction="pwr"/>
@@ -13535,57 +13534,59 @@ high = share 1.65A between system load and charging </text>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="beba"/>
+<part name="FRAME101" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device="" value="beba"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
+<part name="R101" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
+<part name="R102" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
+<part name="R103" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
+<part name="R104" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="USB1" library="MUSBR-05-F-O-B-SM-A - Mini USB B Jack" deviceset="MUSBR-05-F-O-B-SM-A" device="" value="MUSBR-05-F-O-B-SM-A"/>
-<part name="USB2" library="USB-A-S-S-B-SM2 - USB A Jack" deviceset="USB-A-S-X-X-SM2" device="" value="USB-A-S-S-B-SM2"/>
-<part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
-<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="Li-Ion +"/>
-<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="NTC"/>
-<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN2"/>
-<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
-<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN3"/>
-<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
+<part name="USB101" library="MUSBR-05-F-O-B-SM-A - Mini USB B Jack" deviceset="MUSBR-05-F-O-B-SM-A" device="" value="MUSBR-05-F-O-B-SM-A"/>
+<part name="USB102" library="USB-A-S-S-B-SM2 - USB A Jack" deviceset="USB-A-S-X-X-SM2" device="" value="USB-A-S-S-B-SM2"/>
+<part name="PAD107" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
+<part name="PAD106" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="Li-Ion +"/>
+<part name="PAD105" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="NTC"/>
+<part name="PAD101" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN2"/>
+<part name="PAD102" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
+<part name="PAD103" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN3"/>
+<part name="PAD104" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
+<part name="D102" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
+<part name="D101" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="38.1" y="167.64" size="1.778" layer="97" rot="R180" align="center">USB-A: upstream facing</text>
 <text x="332.74" y="152.4" size="1.778" layer="97" align="center">mini USB-B: downstream facing</text>
-<text x="50.8" y="144.78" size="1.778" layer="97" rot="R180" align="center">input #2</text>
-<text x="50.8" y="121.92" size="1.778" layer="97" rot="R180" align="center">input #3</text>
+<text x="40.64" y="144.78" size="1.778" layer="97" rot="R180" align="center">input #2</text>
+<text x="40.64" y="121.92" size="1.778" layer="97" rot="R180" align="center">input #3</text>
 <text x="38.1" y="165.1" size="1.778" layer="97" rot="R180" align="center">input #1</text>
 <text x="154.94" y="139.7" size="1.778" layer="97">connect 
 10k NTC to GND</text>
-<text x="60.96" y="147.32" size="1.778" layer="97">max. 7.0V</text>
-<text x="60.96" y="124.46" size="1.778" layer="97">max. 7.0V</text>
+<text x="50.8" y="147.32" size="1.778" layer="97">max. 7.0V</text>
+<text x="50.8" y="124.46" size="1.778" layer="97">max. 7.0V</text>
 <text x="127" y="137.16" size="1.778" layer="97" rot="R270">Vzener = 6.8V</text>
 <text x="147.32" y="114.3" size="1.778" layer="97">NTC: NXFT15XH103FEAB045</text>
 </plain>
 <moduleinsts>
-<moduleinst name="IDEAL_DIODE1" module="IDEAL_DIODE" x="104.14" y="172.72">
+<moduleinst name="IDEAL_DIODE1" module="1_IDEAL_DIODE" x="104.14" y="172.72" offset="200">
 <attribute name="NAME" x="104.14" y="177.8" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="IDEAL_DIODE2" module="IDEAL_DIODE" x="104.14" y="144.78">
+<moduleinst name="IDEAL_DIODE2" module="1_IDEAL_DIODE" x="104.14" y="144.78" offset="300">
 <attribute name="NAME" x="104.14" y="149.86" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="IDEAL_DIODE3" module="IDEAL_DIODE" x="104.14" y="121.92">
+<moduleinst name="IDEAL_DIODE3" module="1_IDEAL_DIODE" x="104.14" y="121.92" offset="400">
 <attribute name="NAME" x="104.14" y="127" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="TPS630701-1" module="TPS630701" x="266.7" y="144.78">
+<moduleinst name="TPS630701-1" module="2_TPS630701" x="266.7" y="144.78" offset="600">
 <attribute name="NAME" x="266.7" y="149.86" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="MCP73871-1" module="MCP73871" x="195.58" y="139.7">
+<moduleinst name="MCP73871-1" module="3_MCP73871" x="195.58" y="139.7" offset="500">
 <attribute name="NAME" x="195.58" y="147.32" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
@@ -13593,16 +13594,16 @@ high = share 1.65A between system load and charging </text>
 <instance part="GND31" gate="1" x="294.64" y="134.62" smashed="yes">
 <attribute name="VALUE" x="294.64" y="134.62" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND1" gate="1" x="78.74" y="142.24" smashed="yes" rot="R90">
-<attribute name="VALUE" x="78.74" y="142.24" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="66.04" y="142.24" smashed="yes" rot="R90">
+<attribute name="VALUE" x="66.04" y="142.24" size="1.778" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="78.74" y="162.56" smashed="yes" rot="R90">
 <attribute name="VALUE" x="78.74" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="78.74" y="119.38" smashed="yes" rot="R90">
-<attribute name="VALUE" x="78.74" y="119.38" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="66.04" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="66.04" y="119.38" size="1.778" layer="96"/>
 </instance>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<instance part="FRAME101" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
@@ -13616,19 +13617,19 @@ high = share 1.65A between system load and charging </text>
 <instance part="GND15" gate="1" x="175.26" y="127" smashed="yes">
 <attribute name="VALUE" x="167.64" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="271.78" y="91.44" smashed="yes" rot="R90">
+<instance part="R101" gate="G$1" x="271.78" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="270.2814" y="87.63" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="87.63" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="271.78" y="81.28" smashed="yes" rot="R90">
+<instance part="R102" gate="G$1" x="271.78" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="270.2814" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R3" gate="G$1" x="299.72" y="91.44" smashed="yes" rot="R90">
+<instance part="R103" gate="G$1" x="299.72" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="298.2214" y="87.63" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="303.022" y="87.63" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="299.72" y="81.28" smashed="yes" rot="R90">
+<instance part="R104" gate="G$1" x="299.72" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="298.2214" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="303.022" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -13638,41 +13639,48 @@ high = share 1.65A between system load and charging </text>
 <instance part="GND30" gate="1" x="299.72" y="71.12" smashed="yes">
 <attribute name="VALUE" x="299.72" y="71.12" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="USB1" gate="G$1" x="58.42" y="167.64" smashed="yes" rot="MR0">
+<instance part="USB101" gate="G$1" x="58.42" y="167.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="66.04" y="177.8" size="1.778" layer="95" rot="MR0" align="top-left"/>
 <attribute name="VALUE" x="66.04" y="157.48" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="USB2" gate="G$1" x="314.96" y="139.7" smashed="yes">
+<instance part="USB102" gate="G$1" x="314.96" y="139.7" smashed="yes">
 <attribute name="NAME" x="307.34" y="148.59" size="1.778" layer="95"/>
 <attribute name="VALUE" x="307.34" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD7" gate="1" x="157.48" y="129.54" smashed="yes">
+<instance part="PAD107" gate="1" x="157.48" y="129.54" smashed="yes">
 <attribute name="VALUE" x="154.94" y="129.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PAD6" gate="1" x="157.48" y="132.08" smashed="yes">
+<instance part="PAD106" gate="1" x="157.48" y="132.08" smashed="yes">
 <attribute name="VALUE" x="154.94" y="132.08" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PAD5" gate="1" x="157.48" y="137.16" smashed="yes">
+<instance part="PAD105" gate="1" x="157.48" y="137.16" smashed="yes">
 <attribute name="VALUE" x="154.94" y="137.16" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PAD1" gate="1" x="68.58" y="144.78" smashed="yes">
-<attribute name="NAME" x="66.04" y="144.78" size="1.778" layer="95" rot="R180"/>
+<instance part="PAD101" gate="1" x="58.42" y="144.78" smashed="yes">
+<attribute name="NAME" x="55.88" y="144.78" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="PAD2" gate="1" x="68.58" y="142.24" smashed="yes">
-<attribute name="VALUE" x="66.04" y="142.24" size="1.778" layer="96" rot="R180"/>
+<instance part="PAD102" gate="1" x="58.42" y="142.24" smashed="yes">
+<attribute name="VALUE" x="55.88" y="142.24" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PAD3" gate="1" x="68.58" y="121.92" smashed="yes">
-<attribute name="NAME" x="66.04" y="121.92" size="1.778" layer="95" rot="R180"/>
+<instance part="PAD103" gate="1" x="58.42" y="121.92" smashed="yes">
+<attribute name="NAME" x="55.88" y="121.92" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="PAD4" gate="1" x="68.58" y="119.38" smashed="yes">
-<attribute name="VALUE" x="66.04" y="119.38" size="1.778" layer="96" rot="R180"/>
+<instance part="PAD104" gate="1" x="58.42" y="119.38" smashed="yes">
+<attribute name="VALUE" x="55.88" y="119.38" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND4" gate="1" x="134.62" y="127" smashed="yes">
-<attribute name="VALUE" x="134.62" y="127" size="1.778" layer="96" rot="R270"/>
+<instance part="D102" gate="G$1" x="76.2" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="74.295" y="115.062" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="73.66" y="111.76" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D1" gate="G$1" x="134.62" y="137.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="132.715" y="135.382" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="137.16" y="137.16" size="1.778" layer="96" rot="R270"/>
+<instance part="D101" gate="G$1" x="76.2" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="74.295" y="137.922" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="73.66" y="134.62" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND4" gate="1" x="76.2" y="109.22" smashed="yes">
+<attribute name="VALUE" x="76.2" y="109.22" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND5" gate="1" x="76.2" y="132.08" smashed="yes">
+<attribute name="VALUE" x="76.2" y="132.08" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -13680,14 +13688,14 @@ high = share 1.65A between system load and charging </text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="71.12" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="142.24" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="PAD2" gate="1" pin="P"/>
+<pinref part="PAD102" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="76.2" y1="119.38" x2="71.12" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="PAD4" gate="1" pin="P"/>
+<wire x1="63.5" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="PAD104" gate="1" pin="P"/>
 </segment>
 <segment>
 <portref moduleinst="TPS630701-1" port="GND"/>
@@ -13702,32 +13710,37 @@ high = share 1.65A between system load and charging </text>
 <segment>
 <wire x1="160.02" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="PAD7" gate="1" pin="P"/>
+<pinref part="PAD107" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R102" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="76.2" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R104" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="76.2" x2="299.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="71.12" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="USB1" gate="G$1" pin="GND"/>
+<pinref part="USB101" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND31" gate="1" pin="GND"/>
-<pinref part="USB2" gate="G$1" pin="GND"/>
+<pinref part="USB102" gate="G$1" pin="GND"/>
 <wire x1="302.26" y1="137.16" x2="294.64" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="134.62" y1="134.62" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="D102" gate="G$1" pin="A"/>
+<wire x1="76.2" y1="114.3" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="D1" gate="G$1" pin="A"/>
+</segment>
+<segment>
+<pinref part="D101" gate="G$1" pin="A"/>
+<wire x1="76.2" y1="137.16" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V_INPUT" class="1">
@@ -13737,14 +13750,10 @@ high = share 1.65A between system load and charging </text>
 <portref moduleinst="IDEAL_DIODE3" port="CATHODE"/>
 <label x="124.46" y="160.02" size="1.778" layer="95"/>
 <portref moduleinst="MCP73871-1" port="V_IN"/>
-<wire x1="124.46" y1="144.78" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="172.72" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
 <junction x="124.46" y="144.78"/>
 <wire x1="124.46" y1="144.78" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="134.62" y1="139.7" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
-<junction x="134.62" y="144.78"/>
 </segment>
 </net>
 <net name="V_LIION+" class="1">
@@ -13752,45 +13761,45 @@ high = share 1.65A between system load and charging </text>
 <wire x1="175.26" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <portref moduleinst="MCP73871-1" port="V_LIION+"/>
 <label x="167.64" y="132.08" size="1.778" layer="95"/>
-<pinref part="PAD6" gate="1" pin="P"/>
+<pinref part="PAD106" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="USBDN" class="2">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R101" gate="G$1" pin="1"/>
+<pinref part="R102" gate="G$1" pin="2"/>
 <label x="279.4" y="86.36" size="1.778" layer="95"/>
 <wire x1="271.78" y1="86.36" x2="279.4" y2="86.36" width="0.1524" layer="91"/>
 <junction x="271.78" y="86.36"/>
 </segment>
 <segment>
-<pinref part="USB2" gate="G$1" pin="D-"/>
+<pinref part="USB102" gate="G$1" pin="D-"/>
 <wire x1="302.26" y1="142.24" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
 <label x="294.64" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="USBDP" class="2">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R103" gate="G$1" pin="1"/>
+<pinref part="R104" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="86.36" x2="306.07" y2="86.36" width="0.1524" layer="91"/>
 <junction x="299.72" y="86.36"/>
 <label x="306.07" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB2" gate="G$1" pin="D+"/>
+<pinref part="USB102" gate="G$1" pin="D+"/>
 <wire x1="302.26" y1="139.7" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
 <label x="294.64" y="139.7" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="5V0" class="1">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R101" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="96.52" x2="271.78" y2="99.06" width="0.1524" layer="91"/>
 <label x="271.78" y="99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R103" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="96.52" x2="299.72" y2="99.06" width="0.1524" layer="91"/>
 <label x="299.72" y="99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -13798,31 +13807,39 @@ high = share 1.65A between system load and charging </text>
 <portref moduleinst="TPS630701-1" port="5V0_OUT"/>
 <wire x1="302.26" y1="144.78" x2="287.02" y2="144.78" width="0.1524" layer="91"/>
 <label x="294.64" y="144.78" size="1.778" layer="95" rot="R180"/>
-<pinref part="USB2" gate="G$1" pin="VCC"/>
+<pinref part="USB102" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="VINPUT2" class="1">
 <segment>
-<label x="81.28" y="144.78" size="1.778" layer="95" rot="R90"/>
+<label x="83.82" y="144.78" size="1.778" layer="95" rot="R270"/>
 <portref moduleinst="IDEAL_DIODE2" port="ANODE"/>
-<wire x1="83.82" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
+<wire x1="83.82" y1="144.78" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="PAD101" gate="1" pin="P"/>
+<pinref part="D101" gate="G$1" pin="C"/>
+<wire x1="76.2" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="142.24" x2="76.2" y2="144.78" width="0.1524" layer="91"/>
+<junction x="76.2" y="144.78"/>
 </segment>
 </net>
 <net name="VINPUT3" class="1">
 <segment>
-<wire x1="83.82" y1="121.92" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
-<label x="81.28" y="121.92" size="1.778" layer="95" rot="R90"/>
+<wire x1="83.82" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
+<label x="83.82" y="121.92" size="1.778" layer="95" rot="R270"/>
 <portref moduleinst="IDEAL_DIODE3" port="ANODE"/>
-<pinref part="PAD3" gate="1" pin="P"/>
+<pinref part="PAD103" gate="1" pin="P"/>
+<pinref part="D102" gate="G$1" pin="C"/>
+<wire x1="76.2" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="119.38" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
+<junction x="76.2" y="121.92"/>
 </segment>
 </net>
 <net name="VINPUT1" class="1">
 <segment>
-<label x="81.28" y="172.72" size="1.778" layer="95" rot="R90"/>
+<label x="83.82" y="172.72" size="1.778" layer="95" rot="R270"/>
 <portref moduleinst="IDEAL_DIODE1" port="ANODE"/>
 <wire x1="71.12" y1="172.72" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="USB1" gate="G$1" pin="VCC"/>
+<pinref part="USB101" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="V_REGULATED" class="1">
@@ -13838,18 +13855,18 @@ high = share 1.65A between system load and charging </text>
 <portref moduleinst="MCP73871-1" port="NTC"/>
 <wire x1="175.26" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
 <label x="167.64" y="137.16" size="1.778" layer="95"/>
-<pinref part="PAD5" gate="1" pin="P"/>
+<pinref part="PAD105" gate="1" pin="P"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,71.12,172.72,USB1,VCC,VINPUT1,,,"/>
-<approved hash="104,1,302.26,144.78,USB2,VCC,5V0,,,"/>
-<approved hash="104,1@MCP73871,106.68,154.94,IC7,IN,V_IN,,,"/>
-<approved hash="104,1@MCP73871,152.4,154.94,IC7,OUT,V_REG,,,"/>
-<approved hash="104,1@MCP73871,152.4,144.78,IC7,VBAT,V_LIION+,,,"/>
+<approved hash="104,1,71.12,172.72,USB101,VCC,VINPUT1,,,"/>
+<approved hash="104,1,302.26,144.78,USB102,VCC,5V0,,,"/>
+<approved hash="104,1@3_MCP73871,106.68,154.94,IC7,IN,V_IN,,,"/>
+<approved hash="104,1@3_MCP73871,152.4,154.94,IC7,OUT,V_REG,,,"/>
+<approved hash="104,1@3_MCP73871,152.4,144.78,IC7,VBAT,V_LIION+,,,"/>
 </errors>
 </schematic>
 </drawing>
