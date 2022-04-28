@@ -11024,26 +11024,26 @@ Source: www.kingbright.com</description>
 <library name="MCP73871 - Powerpath and Charge Controller">
 <packages>
 <package name="QFN50P400X400X100-21N">
-<smd name="1_OUT1" x="-1.8796" y="0.9906" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="2_VPCC" x="-1.8796" y="0.508" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="3_SEL" x="-1.8796" y="0" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="4_PROG2" x="-1.8796" y="-0.508" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="5_THERM" x="-1.8796" y="-0.9906" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="!6_PG!" x="-0.9906" y="-1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="7_STAT2" x="-0.508" y="-1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="8_STAT1/!LBO!" x="0" y="-1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="9_!TE!" x="0.508" y="-1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="10_GND1" x="0.9906" y="-1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="11_GND2" x="1.8796" y="-0.9906" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="12_PROG3" x="1.8796" y="-0.508" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="13_PROG1" x="1.8796" y="0" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="14_VBAT1" x="1.8796" y="0.508" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="15_VBAT2" x="1.8796" y="0.9906" dx="0.3" dy="0.8" layer="1" rot="R270"/>
-<smd name="16_BAT_SENSE" x="0.9906" y="1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="17_CE" x="0.508" y="1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="18_IN1" x="0" y="1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="19_IN2" x="-0.508" y="1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
-<smd name="20_OUT2" x="-0.9906" y="1.8796" dx="0.3" dy="0.8" layer="1" rot="R180"/>
+<smd name="1_OUT1" x="-1.8796" y="0.9906" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="2_VPCC" x="-1.8796" y="0.508" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="3_SEL" x="-1.8796" y="0" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="4_PROG2" x="-1.8796" y="-0.508" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="5_THERM" x="-1.8796" y="-0.9906" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="!6_PG!" x="-0.9906" y="-1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="7_STAT2" x="-0.508" y="-1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="8_STAT1/!LBO!" x="0" y="-1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="9_!TE!" x="0.508" y="-1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="10_GND1" x="0.9906" y="-1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="11_GND2" x="1.8796" y="-0.9906" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="12_PROG3" x="1.8796" y="-0.508" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="13_PROG1" x="1.8796" y="0" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="14_VBAT1" x="1.8796" y="0.508" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="15_VBAT2" x="1.8796" y="0.9906" dx="0.275" dy="0.8" layer="1" rot="R270"/>
+<smd name="16_BAT_SENSE" x="0.9906" y="1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="17_CE" x="0.508" y="1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="18_IN1" x="0" y="1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="19_IN2" x="-0.508" y="1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
+<smd name="20_OUT2" x="-0.9906" y="1.8796" dx="0.275" dy="0.8" layer="1" rot="R180"/>
 <smd name="GND2" x="0" y="0" dx="2.5" dy="2.5" layer="1"/>
 <wire x1="1.9812" y1="1.4732" x2="1.9812" y2="1.9812" width="0.1524" layer="21"/>
 <wire x1="1.4732" y1="-1.9812" x2="1.9812" y2="-1.9812" width="0.1524" layer="21"/>
@@ -11382,13 +11382,13 @@ www.irf.com&lt;p&gt;
 <wire x1="4.3" y1="3.65" x2="5.65" y2="3.65" width="0.2" layer="21"/>
 <hole x="-2.5" y="0" drill="1.3"/>
 <hole x="2.5" y="0" drill="1.3"/>
-<smd name="4_GND" x="3.5" y="3.85" dx="0.9" dy="2.8" layer="1" roundness="4"/>
-<smd name="2_DN" x="-1" y="3.85" dx="0.9" dy="2.8" layer="1" roundness="4"/>
-<smd name="1_5V0" x="-3.5" y="3.85" dx="0.9" dy="2.8" layer="1" roundness="4"/>
-<smd name="3_DP" x="1" y="3.85" dx="0.9" dy="2.8" layer="1" roundness="4"/>
+<smd name="4_GND" x="3.5" y="3.85" dx="0.9" dy="2.8" layer="1"/>
+<smd name="2_DN" x="-1" y="3.85" dx="0.9" dy="2.8" layer="1"/>
+<smd name="1_5V0" x="-3.5" y="3.85" dx="0.9" dy="2.8" layer="1"/>
+<smd name="3_DP" x="1" y="3.85" dx="0.9" dy="2.8" layer="1"/>
 <smd name="G1" x="-7.25" y="1.6" dx="2.5" dy="5" layer="1"/>
 <smd name="G2" x="7.25" y="1.6" dx="2.5" dy="5" layer="1"/>
-<text x="-4.5" y="4" size="0.5" layer="21" font="vector" rot="R270" align="center-right">5V0</text>
+<text x="-5.5" y="4" size="0.5" layer="21" font="vector" rot="R270" align="center-right">5V0</text>
 <text x="-2" y="4.5" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DN</text>
 <text x="2" y="4.5" size="0.5" layer="21" font="vector" rot="R270" align="center-right">DP</text>
 <text x="4.5" y="4" size="0.5" layer="21" font="vector" rot="R270" align="center-right">GND</text>
