@@ -12693,6 +12693,46 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fiducials">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+<package name="FIDUCIAL_0.5MM">
+<smd name="FID" x="0" y="0" dx="0.5" dy="0.5" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="FID" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FID_1MM" package="FIDUCIAL_1MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FID_0.5MM" package="FIDUCIAL_0.5MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13557,6 +13597,9 @@ high = share 1.65A between system load and charging </text>
 <part name="D101" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FID1" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
+<part name="FID2" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
+<part name="FID3" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -13682,6 +13725,9 @@ high = share 1.65A between system load and charging </text>
 <instance part="GND5" gate="1" x="76.2" y="132.08" smashed="yes">
 <attribute name="VALUE" x="76.2" y="132.08" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="FID1" gate="G$1" x="78.74" y="83.82" smashed="yes"/>
+<instance part="FID2" gate="G$1" x="78.74" y="73.66" smashed="yes"/>
+<instance part="FID3" gate="G$1" x="78.74" y="63.5" smashed="yes"/>
 </instances>
 <busses>
 </busses>
