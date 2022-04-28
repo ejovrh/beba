@@ -13597,9 +13597,9 @@ high = share 1.65A between system load and charging </text>
 <part name="D101" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FID1" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
-<part name="FID2" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
-<part name="FID3" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM"/>
+<part name="FID1" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
+<part name="FID2" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
+<part name="FID3" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
 </parts>
 <sheets>
 <sheet>
