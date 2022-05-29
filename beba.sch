@@ -13176,11 +13176,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <sheets>
 <sheet>
 <plain>
-<text x="127" y="50.8" size="1.778" layer="97" align="top-left">ds. p. 14: Voltage Proportional Charge Control
-Vvpcc = ( R5 / (R5+R4) ) * Vin
-      = (100k / (150k))* 5.0V
-      = 3.3V
-voltages below 3V3 will cause no charging</text>
 <text x="106.68" y="50.8" size="1.778" layer="97">R4</text>
 <text x="106.68" y="40.64" size="1.778" layer="97">R5</text>
 <text x="200.66" y="93.98" size="1.778" layer="97" align="top-left">ds. p. 15, 3.8: fast charge
@@ -13212,6 +13207,11 @@ high = share 1.65A between system load and charging </text>
 <wire x1="96.52" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="101.6" x2="93.98" y2="134.62" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="97"/>
+<text x="124.46" y="53.34" size="1.778" layer="97" align="top-left">ds. p. 14: Voltage Proportional Charge Control
+Vvpcc = ( R5 / (R5+R4) ) * Vin
+      = (100k / (149.9k))* 5.0V
+      = 3.36V
+voltages below 3V3 will cause no charging</text>
 </plain>
 <instances>
 <instance part="LED2" gate="G$1" x="33.02" y="25.4" smashed="yes" rot="R90">
