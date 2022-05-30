@@ -15119,7 +15119,7 @@ www.irf.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="diode">
+<library name="diode" urn="urn:adsk.eagle:library:210">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
 &lt;ul&gt;
@@ -16226,6 +16226,112 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="JS102011SAQN SPDT slide switch">
+<packages>
+<package name="SMD">
+<smd name="C" x="0" y="0" dx="1.2" dy="2.5" layer="1"/>
+<smd name="2" x="2.5" y="0" dx="1.2" dy="2.5" layer="1"/>
+<smd name="1" x="-2.5" y="0" dx="1.2" dy="2.5" layer="1"/>
+<hole x="-3.4" y="-2.7625" drill="0.9"/>
+<hole x="3.4" y="-2.7625" drill="0.9"/>
+<wire x1="-4.5" y1="-4.5625" x2="4.5" y2="-4.5625" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-0.9625" x2="-4.5" y2="-4.5625" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-0.9625" x2="4.5" y2="-4.5625" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-0.9625" x2="3.2" y2="-0.9625" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-0.9625" x2="0.7" y2="-0.9625" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.9625" x2="-1.8" y2="-0.9625" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-0.9625" x2="-4.5" y2="-0.9625" width="0.127" layer="21"/>
+<text x="-5.08" y="-2.54" size="0.75" layer="25" rot="R90" align="center">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="0.75" layer="27" rot="R90" align="center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SPDT">
+<pin name="C" x="0" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="1" x="-2.54" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
+<text x="12.7" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="12.7" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JS102011SAQN" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="JST-PH">
+<packages>
+<package name="JST_S2B-PH-SM4-TB(LF)(SN)">
+<wire x1="3.95" y1="0.35" x2="1.9" y2="0.35" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="0.35" x2="-3.95" y2="0.35" width="0.127" layer="21"/>
+<wire x1="-3.95" y1="0.35" x2="-3.95" y2="-3.65" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-7.25" x2="2.2" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-3.65" x2="3.95" y2="0.35" width="0.127" layer="21"/>
+<text x="-5.08" y="-2.54" size="0.75" layer="25" rot="R90" align="center">&gt;NAME</text>
+<text x="-3.75341875" y="-10.1187" size="1.274540625" layer="27">&gt;VALUE</text>
+<smd name="2" x="1" y="0" dx="1" dy="3.5" layer="1" rot="R180"/>
+<smd name="1" x="-1" y="0" dx="1" dy="3.5" layer="1" rot="R180"/>
+<smd name="S2" x="3.35" y="-5.75" dx="1.5" dy="3.4" layer="1" rot="R180"/>
+<smd name="S1" x="-3.35" y="-5.75" dx="1.5" dy="3.4" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="S2B-PH-SM4-TB(LF)(SN)">
+<text x="-5.0829" y="5.59571875" size="1.272509375" layer="95">&gt;NAME</text>
+<text x="-5.08811875" y="-9.42268125" size="1.275409375" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<pin name="1" x="-7.62" y="2.54" length="short" direction="pas"/>
+<pin name="2" x="-7.62" y="0" length="short" direction="pas"/>
+<pin name="SHIELD" x="-7.62" y="-5.08" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S2B-PH-SM4-TB(LF)(SN)" prefix="J">
+<description>PH Series 2 Position 2 mm Pitch Surface Mount Side Entry Shrouded Header &lt;a href="https://pricing.snapeda.com/parts/S2B-PH-SM4-TB%28LF%29%28SN%29/JST%20Sales/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="S2B-PH-SM4-TB(LF)(SN)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST_S2B-PH-SM4-TB(LF)(SN)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Connector Header Surface Mount, Right Angle 2 position 0.079 (2.00mm) "/>
+<attribute name="MF" value="JST Sales"/>
+<attribute name="MP" value="S2B-PH-SM4-TB(LF)(SN)"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/S2B-PH-SM4-TB(LF)(SN)/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16368,6 +16474,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="L2" library="XFL4020 - Inductor" deviceset="XFL4020-152MEC" device="" value="XFL4020-152MEC"/>
 <part name="IC1" library="TPS630701 - Buck Boost 5V regulator" deviceset="TPS630701" device="" value="TPS630701RNMT"/>
+<part name="SW101" library="JS102011SAQN SPDT slide switch" deviceset="JS102011SAQN" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16451,14 +16559,21 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <attribute name="VALUE" x="154.94" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="152.4" y="91.44" smashed="yes">
-<attribute name="NAME" x="149.86" y="93.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="154.94" y="93.98" size="1.778" layer="96"/>
+<attribute name="NAME" x="154.94" y="93.98" size="1.778" layer="95"/>
+<attribute name="VALUE" x="154.94" y="88.9" size="1.778" layer="96"/>
 </instance>
 <instance part="L2" gate="G$1" x="124.46" y="129.54" smashed="yes">
 <attribute name="NAME" x="124.46" y="132.08" size="1" layer="95" font="vector" align="center"/>
 <attribute name="VALUE" x="124.46" y="128.27" size="1" layer="96" font="vector" align="center"/>
 </instance>
 <instance part="IC1" gate="G$1" x="124.46" y="101.6" smashed="yes"/>
+<instance part="SW101" gate="G$1" x="152.4" y="58.42" smashed="yes">
+<attribute name="NAME" x="165.1" y="58.42" size="1.27" layer="95"/>
+<attribute name="VALUE" x="165.1" y="55.88" size="1.27" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="149.86" y="48.26" smashed="yes">
+<attribute name="VALUE" x="149.86" y="45.72" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16524,6 +16639,11 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="198.12" y1="96.52" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SW101" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="53.34" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V_IN" class="1">
@@ -16598,15 +16718,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="IC1" gate="G$1" pin="3-VAUX"/>
 </segment>
 </net>
-<net name="N$8" class="2">
+<net name="EN" class="2">
 <segment>
-<wire x1="142.24" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="93.98" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<junction x="147.32" y="91.44"/>
-<pinref part="IC1" gate="G$1" pin="1-PS/S"/>
 <pinref part="IC1" gate="G$1" pin="14-EN"/>
+<label x="147.32" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SW101" gate="G$1" pin="C"/>
+<wire x1="152.4" y1="53.34" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<label x="152.4" y="50.8" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="L1" class="0">
@@ -16623,6 +16744,19 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="129.54" y1="129.54" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="SP/S" class="2">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="1-PS/S"/>
+<label x="147.32" y="91.44" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="SW101" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="53.34" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<label x="154.94" y="50.8" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -16633,7 +16767,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <port name="V_IN" side="left" coord="5.08" direction="pwr"/>
 <port name="V_LIION+" side="left" coord="-7.62" direction="pwr"/>
 <port name="V_REG" side="right" coord="5.08" direction="pwr"/>
-<port name="NTC" side="left" coord="-2.54" direction="hiz"/>
+<port name="NTC" side="left" coord="0" direction="hiz"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -17071,29 +17205,28 @@ voltages below 3V3 will cause no charging</text>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R101" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
-<part name="R102" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
-<part name="R103" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
-<part name="R104" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
+<part name="R102" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
+<part name="R103" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
+<part name="R104" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="75k"/>
+<part name="R105" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="49k9"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="USB101" library="MUSBR-05-F-O-B-SM-A - Mini USB B Jack" deviceset="MUSBR-05-F-O-B-SM-A" device="" value="MUSBR-05-F-O-B-SM-A"/>
 <part name="USB102" library="USB-A-S-S-B-SM2 - USB A Jack" deviceset="USB-A-S-X-X-SM2" device="" value="USB-A-S-S-B-SM2"/>
-<part name="PAD107" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
-<part name="PAD106" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="Li-Ion +"/>
 <part name="PAD101" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN2"/>
 <part name="PAD102" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
 <part name="PAD103" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="IN3"/>
 <part name="PAD104" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1" value="GND"/>
-<part name="D102" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
-<part name="D101" library="diode" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
+<part name="D102" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
+<part name="D101" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="3SMBJ5921B-TP"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FID1" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
-<part name="FID2" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
-<part name="FID3" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k NTC, beta 3892"/>
+<part name="FID101" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
+<part name="FID102" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
+<part name="FID103" library="fiducials" deviceset="FIDUCIAL" device="FID_0.5MM" value="fiducial"/>
+<part name="R101" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k NTC, beta 3892"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J101" library="JST-PH" deviceset="S2B-PH-SM4-TB(LF)(SN)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17106,7 +17239,6 @@ voltages below 3V3 will cause no charging</text>
 <text x="50.8" y="147.32" size="1.778" layer="97">max. 7.0V</text>
 <text x="50.8" y="124.46" size="1.778" layer="97">max. 7.0V</text>
 <text x="127" y="137.16" size="1.778" layer="97" rot="R270">Vzener = 6.8V</text>
-<text x="147.32" y="114.3" size="1.778" layer="97">NTC: NXFT15XH103FEAB045</text>
 </plain>
 <moduleinsts>
 <moduleinst name="IDEAL_DIODE1" module="1_IDEAL_DIODE" x="104.14" y="172.72" offset="200">
@@ -17152,19 +17284,19 @@ voltages below 3V3 will cause no charging</text>
 <instance part="GND15" gate="1" x="175.26" y="127" smashed="yes">
 <attribute name="VALUE" x="167.64" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="R101" gate="G$1" x="271.78" y="91.44" smashed="yes" rot="R90">
+<instance part="R102" gate="G$1" x="271.78" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="270.2814" y="87.63" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="87.63" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R102" gate="G$1" x="271.78" y="81.28" smashed="yes" rot="R90">
+<instance part="R103" gate="G$1" x="271.78" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="270.2814" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="275.082" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R103" gate="G$1" x="299.72" y="91.44" smashed="yes" rot="R90">
+<instance part="R104" gate="G$1" x="299.72" y="91.44" smashed="yes" rot="R90">
 <attribute name="NAME" x="298.2214" y="87.63" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="303.022" y="87.63" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R104" gate="G$1" x="299.72" y="81.28" smashed="yes" rot="R90">
+<instance part="R105" gate="G$1" x="299.72" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="298.2214" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="303.022" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -17181,12 +17313,6 @@ voltages below 3V3 will cause no charging</text>
 <instance part="USB102" gate="G$1" x="314.96" y="139.7" smashed="yes">
 <attribute name="NAME" x="307.34" y="148.59" size="1.778" layer="95"/>
 <attribute name="VALUE" x="307.34" y="132.08" size="1.778" layer="96"/>
-</instance>
-<instance part="PAD107" gate="1" x="157.48" y="129.54" smashed="yes">
-<attribute name="VALUE" x="154.94" y="129.54" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="PAD106" gate="1" x="157.48" y="132.08" smashed="yes">
-<attribute name="VALUE" x="154.94" y="132.08" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="PAD101" gate="1" x="58.42" y="144.78" smashed="yes">
 <attribute name="NAME" x="55.88" y="144.78" size="1.778" layer="95" rot="R180"/>
@@ -17214,15 +17340,19 @@ voltages below 3V3 will cause no charging</text>
 <instance part="GND5" gate="1" x="76.2" y="132.08" smashed="yes">
 <attribute name="VALUE" x="76.2" y="132.08" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="FID1" gate="G$1" x="78.74" y="83.82" smashed="yes"/>
-<instance part="FID2" gate="G$1" x="78.74" y="73.66" smashed="yes"/>
-<instance part="FID3" gate="G$1" x="78.74" y="63.5" smashed="yes"/>
-<instance part="R1" gate="G$1" x="167.64" y="137.16" smashed="yes">
-<attribute name="NAME" x="167.64" y="139.7" size="1.778" layer="95"/>
-<attribute name="VALUE" x="165.1" y="139.7" size="1.778" layer="96" align="bottom-right"/>
+<instance part="FID101" gate="G$1" x="78.74" y="83.82" smashed="yes"/>
+<instance part="FID102" gate="G$1" x="78.74" y="73.66" smashed="yes"/>
+<instance part="FID103" gate="G$1" x="78.74" y="63.5" smashed="yes"/>
+<instance part="R101" gate="G$1" x="167.64" y="139.7" smashed="yes">
+<attribute name="NAME" x="167.64" y="142.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.1" y="142.24" size="1.778" layer="96" align="bottom-right"/>
 </instance>
-<instance part="GND6" gate="1" x="157.48" y="134.62" smashed="yes">
-<attribute name="VALUE" x="154.94" y="134.62" size="1.778" layer="96" rot="R180"/>
+<instance part="GND6" gate="1" x="157.48" y="137.16" smashed="yes">
+<attribute name="VALUE" x="154.94" y="137.16" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="J101" gate="G$1" x="152.4" y="129.54" smashed="yes" rot="MR0">
+<attribute name="NAME" x="147.32" y="129.54" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="147.32" y="121.92" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -17250,17 +17380,22 @@ voltages below 3V3 will cause no charging</text>
 <portref moduleinst="MCP73871-1" port="GND"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="PAD107" gate="1" pin="P"/>
+<pinref part="J101" gate="G$1" pin="2"/>
+<pinref part="J101" gate="G$1" pin="SHIELD"/>
+<wire x1="162.56" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="124.46" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<junction x="162.56" y="129.54"/>
 </segment>
 <segment>
-<pinref part="R102" gate="G$1" pin="1"/>
+<pinref part="R103" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="76.2" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R104" gate="G$1" pin="1"/>
+<pinref part="R105" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="76.2" x2="299.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 </segment>
@@ -17285,8 +17420,8 @@ voltages below 3V3 will cause no charging</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R101" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="139.7" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -17308,13 +17443,13 @@ voltages below 3V3 will cause no charging</text>
 <wire x1="175.26" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <portref moduleinst="MCP73871-1" port="V_LIION+"/>
 <label x="167.64" y="132.08" size="1.778" layer="95"/>
-<pinref part="PAD106" gate="1" pin="P"/>
+<pinref part="J101" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="USBDN" class="2">
 <segment>
-<pinref part="R101" gate="G$1" pin="1"/>
-<pinref part="R102" gate="G$1" pin="2"/>
+<pinref part="R102" gate="G$1" pin="1"/>
+<pinref part="R103" gate="G$1" pin="2"/>
 <label x="279.4" y="86.36" size="1.778" layer="95"/>
 <wire x1="271.78" y1="86.36" x2="279.4" y2="86.36" width="0.1524" layer="91"/>
 <junction x="271.78" y="86.36"/>
@@ -17327,8 +17462,8 @@ voltages below 3V3 will cause no charging</text>
 </net>
 <net name="USBDP" class="2">
 <segment>
-<pinref part="R103" gate="G$1" pin="1"/>
-<pinref part="R104" gate="G$1" pin="2"/>
+<pinref part="R104" gate="G$1" pin="1"/>
+<pinref part="R105" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="86.36" x2="306.07" y2="86.36" width="0.1524" layer="91"/>
 <junction x="299.72" y="86.36"/>
 <label x="306.07" y="86.36" size="1.778" layer="95"/>
@@ -17341,12 +17476,12 @@ voltages below 3V3 will cause no charging</text>
 </net>
 <net name="5V0" class="1">
 <segment>
-<pinref part="R101" gate="G$1" pin="2"/>
+<pinref part="R102" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="96.52" x2="271.78" y2="99.06" width="0.1524" layer="91"/>
 <label x="271.78" y="99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="R103" gate="G$1" pin="2"/>
+<pinref part="R104" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="96.52" x2="299.72" y2="99.06" width="0.1524" layer="91"/>
 <label x="299.72" y="99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -17400,8 +17535,8 @@ voltages below 3V3 will cause no charging</text>
 <net name="NTC" class="0">
 <segment>
 <portref moduleinst="MCP73871-1" port="NTC"/>
-<wire x1="175.26" y1="137.16" x2="172.72" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="139.7" x2="172.72" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R101" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
