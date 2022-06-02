@@ -341,10 +341,16 @@ in progress</text>
 <vertex x="-31.65" y="151"/>
 </polygon>
 <polygon width="0.01" layer="30">
-<vertex x="-35.15" y="142.9"/>
-<vertex x="-33.35" y="142.9"/>
-<vertex x="-33.35" y="141.1"/>
-<vertex x="-35.15" y="141.1"/>
+<vertex x="-32.65" y="142.9"/>
+<vertex x="-30.85" y="142.9"/>
+<vertex x="-30.85" y="141.1"/>
+<vertex x="-32.65" y="141.1"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-30.85" y="142.9"/>
+<vertex x="-32.65" y="142.9"/>
+<vertex x="-32.65" y="141.1"/>
+<vertex x="-30.85" y="141.1"/>
 </polygon>
 </plain>
 <libraries>
@@ -3591,10 +3597,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-32.5" y1="150" x2="-32" y2="150.5" width="0.25" layer="16"/>
 <wire x1="-32" y1="150.5" x2="-32" y2="152.375" width="0.25" layer="16"/>
 <polygon width="0.01" layer="16" thermals="no">
-<vertex x="-35.15" y="142.9"/>
-<vertex x="-33.35" y="142.9"/>
-<vertex x="-33.35" y="141.1"/>
-<vertex x="-35.15" y="141.1"/>
+<vertex x="-32.65" y="142.9"/>
+<vertex x="-30.85" y="142.9"/>
+<vertex x="-30.85" y="141.1"/>
+<vertex x="-32.65" y="141.1"/>
 </polygon>
 </signal>
 <signal name="V_LIION+" class="1">
@@ -4137,6 +4143,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="-38.25" y1="156.9" x2="-38.25" y2="154.25" width="0.25" layer="1"/>
 <wire x1="-39.75" y1="158.4" x2="-38.25" y2="156.9" width="0.25" layer="1"/>
 <wire x1="-38.25" y1="154.25" x2="-37" y2="153" width="0.25" layer="1"/>
+</signal>
+<signal name="V_INPUT1" class="1">
+<polygon width="0.01" layer="1" thermals="no">
+<vertex x="-30.85" y="142.9"/>
+<vertex x="-32.65" y="142.9"/>
+<vertex x="-32.65" y="141.1"/>
+<vertex x="-30.85" y="141.1"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
