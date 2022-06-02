@@ -16250,8 +16250,28 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pin name="C" x="0" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
 <pin name="1" x="-2.54" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
 <pin name="2" x="2.54" y="-5.08" visible="pad" length="middle" direction="pas" rot="R90"/>
-<text x="12.7" y="0" size="1.27" layer="95">&gt;NAME</text>
-<text x="12.7" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<text x="5.715" y="3.175" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.715" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="1.905" x2="-3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="8.255" x2="3.81" y2="8.255" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="8.255" x2="-2.54" y2="9.525" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="8.255" x2="-2.54" y2="6.985" width="0.254" layer="94"/>
+<wire x1="3.81" y1="8.255" x2="2.54" y2="9.525" width="0.254" layer="94"/>
+<wire x1="3.81" y1="8.255" x2="2.54" y2="6.985" width="0.254" layer="94"/>
+<circle x="-1.27" y="6.985" radius="0.1651" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16474,7 +16494,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="L2" library="XFL4020 - Inductor" deviceset="XFL4020-152MEC" device="" value="XFL4020-152MEC"/>
 <part name="IC1" library="TPS630701 - Buck Boost 5V regulator" deviceset="TPS630701" device="" value="TPS630701RNMT"/>
-<part name="SW101" library="JS102011SAQN SPDT slide switch" deviceset="JS102011SAQN" device=""/>
+<part name="SW101" library="JS102011SAQN SPDT slide switch" deviceset="JS102011SAQN" device="" value="JS102011SAQN"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -16568,8 +16588,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </instance>
 <instance part="IC1" gate="G$1" x="124.46" y="101.6" smashed="yes"/>
 <instance part="SW101" gate="G$1" x="152.4" y="58.42" smashed="yes">
-<attribute name="NAME" x="165.1" y="58.42" size="1.27" layer="95"/>
-<attribute name="VALUE" x="165.1" y="55.88" size="1.27" layer="96"/>
+<attribute name="NAME" x="160.02" y="60.96" size="1.27" layer="95"/>
+<attribute name="VALUE" x="160.02" y="58.42" size="1.27" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="149.86" y="48.26" smashed="yes">
 <attribute name="VALUE" x="149.86" y="45.72" size="1.778" layer="96" rot="R270"/>
@@ -16726,8 +16746,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="SW101" gate="G$1" pin="C"/>
-<wire x1="152.4" y1="53.34" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
-<label x="152.4" y="50.8" size="1.778" layer="95" rot="R270"/>
+<wire x1="152.4" y1="53.34" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<label x="152.4" y="48.26" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="L1" class="0">
@@ -16753,8 +16773,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="SW101" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="53.34" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
-<label x="154.94" y="50.8" size="1.778" layer="95" rot="R270"/>
+<wire x1="154.94" y1="53.34" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="154.94" y="48.26" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
